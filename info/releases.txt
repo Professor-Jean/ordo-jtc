@@ -1,0 +1,29 @@
+JTC_software
+Desenvolvedores: Liany Bitencourt, Lucas Bublitz, Natasha Hostin.
+Data de criação: 10/10/2016
+Versão atual:1026
+
+|--------------------------------|
+Data: 1026
+***
+Redefinição de senha  : 50%
+Registro de cheque : 50%
+Registro de produto : 60%
+Registro de fabricante: 100%
+|--------------------------------|
+|--------------------------------|
+Data: 1017
+***
+Autenticação : 100%
+Desconexão : 100%
+Redefinição de senha  : 40%
+Registro de cheque : 30%
+Registro de produto : 30%
+|--------------------------------|
+|--------------------------------|
+Data: mmdd
+***
+funcionalidade 1  : 10%
+funcionalidade 1  : 10%
+funcionalidade 36 : 10%
+|--------------------------------|

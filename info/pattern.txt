@@ -1,0 +1,45 @@
+Estrutura de Pastas:
+
+/addons
+  /js
+  /php
+/info
+/layout
+  /css
+  /fonts
+  /images
+/security
+  /authentication
+  /database
+/system
+
+Estrutura de comentários
+
+Começo de arquivo:
+
+/**
+*Funcionalidade: ......
+*Data de criação: .....
+*Obs.: ..... //Caso houver
+*/
+
+<?php
+  if($tantan) {// quando quer comentar o prórpio IF
+    // quando quer comentar o bloco de comandos
+  } else {// quando quer comentar o ELSE
+    // quando quer comentar o bloco de comandos
+  }
+
+  $variavel; //comentário de variável
+
+  //código sempre espaçado
+  //Ex.:
+
+  if($numero == $numero2) {//espaçamento de chaves
+
+  } else if($numero > $numero2) {
+
+  } else {
+
+  }
+?>

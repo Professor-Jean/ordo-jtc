@@ -1,0 +1,428 @@
+
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700';
+
+body{
+  background: #222737;
+  font-family: 'Roboto';
+  font-weight: 100;
+  color: #fff;
+}
+
+h4{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 36px;
+}
+
+#content{
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin: 0px auto;
+  min-height: 100vh;
+  box-sizing: border-box;
+  justify-content: center;;
+}
+
+#title-index h1{
+ text-align: center;
+ font-size: 8vw;
+}
+#title-index h2{
+ text-align: center;
+ font-size: 3vw;
+}
+
+#nav{
+  position: relative;
+  width: 300px;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  padding: 10px;
+}
+#nav li{
+  display: block;
+  color: #fff;
+}
+#nav #accordion a{
+  display: inline-block;
+  padding: 10px;
+  width: 100%;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#nav #accordion a:hover, #user a:hover{
+  background: rgba(255, 255, 255, 0.06);
+}
+
+#user{
+  display: flex;
+  padding: 10px;
+  font-weight: 400;
+  height: 30px;
+  align-items: stretch;
+  line-height: 30px;
+}
+#user span{
+  flex-grow: 5;
+}
+#user a{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.tab{
+    border-left: 3px solid #fff;
+    border-top-left-radius: 0px!important;
+    border-bottom-left-radius: 0px!important;
+}
+
+#article{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  max-width: 1000px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+#title-page{
+  text-align: center;
+  font-size: 36px;
+  padding: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+  #content{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 990px) {
+  #nav{
+    width: 250px;
+    font-size: 14px;
+  }
+}
+
+/*---inputs----*/
+
+input[type=text], input[type=password], select, input[type=search]{
+  width: 100%;
+  padding: 8px;
+  border: none;
+  background: rgb(67, 72, 87);
+  color: #fff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  border-left: 3px solid #fff;
+}
+input[type=text]:focus, input[type=password]:focus, input[type=search]:focus, select:focus{
+  background: #fff;
+  color: #000;
+}
+input[readonly=""]{
+  background: none !important;
+  color: #fff !important;
+}
+
+select[disabled=""], button[disabled=""], input[disabled=""]{
+  opacity: 0.3 !important;
+}
+
+.label_input{
+  display: flex;
+}
+.label_input label{
+  background: rgb(67, 72, 87);
+  width:50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.label_input input{
+
+}
+
+button a{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+button{
+  position: relative;
+  padding: 8px;
+  color: #fff;
+  background: none;
+  background: none;
+  font-size: 15px;
+  width: 100%;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background: rgb(67, 72, 87);
+}
+button:hover{
+  background: #2f364d !important;
+  cursor: pointer;
+}
+
+.icon_form{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.small_form, .big_form{
+  position: relative;
+  width: 300px;
+  padding: 10px;
+  border: 1px solid rgb(67, 72, 87);
+  border-radius: 4px;
+  margin: 10px;
+  float: left;
+  box-sizing: border-box;
+}
+.small_form h3, .big_form h3{
+  font-size: 20px !important;
+  padding: 10px;
+}
+.buttons{
+  text-align: right;
+}
+.buttons button{
+  width: auto !important;
+}
+.buttons button[type=reset]{
+  background: none;
+}
+.buttons button[type=button]{
+  float: left;
+}
+
+.big_form{
+  float: none;
+  width: 100%;
+  margin: 0px;
+  padding: 20px;
+}
+.big_form h3{
+  padding-left: 0px;
+}
+.big_form .date{
+  display: block;
+}
+.big_form button{
+  width: 150px;
+}
+.big_form input[type=text]{
+  width: 200px;
+}
+.big_form table{
+  width: 100%;
+  text-align: center;
+}
+.big_form table input{
+  width: 100% !important;
+}
+.big_form table select{
+  min-width: 100%;
+  width: auto;
+}
+
+table{
+  border-collapse: collapse;
+  width: 80%;
+}
+thead{
+  font-weight: bold;
+}
+th, td{
+  padding: 10px;
+  background: rgba(0,0,0,0.2)
+}
+tbody tr{
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+table:not(.dataTable) tbody tr:nth-child(odd){
+  background: rgba(0,0,0,0.3);
+}
+.odd{
+  background: rgba(0,0,0,0.3);
+}
+.details + tr{
+  background: rgba(0,0,0,0.1);
+}
+#table_tabs{
+  border: 2px solid rgba(0,0,0,0.3);
+  clear: both;
+}
+#table_tabs ul{
+  width: 100%;
+  display: flex;
+  background: rgba(0,0,0,0.3);
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+#table_tabs ul a{
+  display: block;
+  padding: 10px;
+}
+#table_tabs li.ui-state-active{
+  background: #fff;
+  color: #000;
+}
+#table_tabs div{
+  padding: 5px;
+}
+
+label input[type=search]{
+  margin-left: 0px !important;
+}
+
+
+.modal_mask{
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+.modal_mask > div{
+  background: #222737;
+}
+.modal_mask h1{
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+}
+.modal_mask p{
+  display: block;
+  padding: 15px;
+  padding-bottom: 0px;
+}
+.buttons_modal{
+  display: block;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.buttons_modal button{
+  width: 150px;
+}
+
+.filter input[type=text]{
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 150px !important;
+}
+.filter button{
+  float: right;
+  width: 100px;
+}
+
+/*classes de apoio e estilo*/
+.simple-link{
+  font-size: 15px;
+  text-decoration: underline;
+  color: #bdbcbc;
+  font-weight: 400;
+}
+.simple-link:hover{
+  color: #fff;
+}
+
+.float-right{
+  float: right !important;
+}
+
+.center-absolute{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.line_error{
+  border: 1px solid #f00;
+}
+
+.details-control{
+  cursor: pointer;
+}
+
+#button_grafic{
+  width: auto;
+}
+
+#noscript{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  z-index: 2;
+}
+#noscript h1, #noscript a{
+  width: auto;
+  font-size: 3vw;
+}
+#noscript a{
+  text-decoration: underline;
+  color: #008CBA;
+}
+#noscript a:hover{
+  color: #0128ba;
+}
+
+#ui-datepicker-div{
+  display: none;
+}
+
+
+/* DatePicker Container */
+.ui-datepicker {
+  background: #222737;
+  border: 1px solid rgb(67, 72, 87);
+  border-radius: 4px;
+  margin-top: 10px;
+  padding: 0px;
+  box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.6);
+  font-weight: 400;
+}
+.ui-datepicker-header{
+  padding: 10px;
+}
+.ui-datepicker-title{
+  display: flex;
+  clear: both;
+}
+.ui-datepicker-prev, .ui-datepicker-next{
+  padding: 5px;
+}
+.ui-datepicker-prev:hover, .ui-datepicker-next:hover{
+  background: rgba(0,0,0,0.4);
+}
+.ui-datepicker-prev{
+  float: left;
+}
+.ui-datepicker-next{
+  float: right;
+}
+.ui-datepicker tbody td {
+  cursor: pointer;
+}
+.ui-datepicker tbody td:hover {
+  background: #fff;
+  color: #000;
+}
+
+
